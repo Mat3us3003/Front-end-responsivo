@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+ul li{
+    list-style: none;
+}
+@media(max-width:480px){
+    .logo{
+        background-color: yellow;
+        border-radius: 10px;
+    }
+    .titulo-logo{
+        text-align: center;
+    }
+
+    
+    nav ul li a{
+        display: inline-block;
+        padding: 0.5em;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        background-color: #cccccc;
+        color: #383838;
+    }
+
+
+    nav ul li{
+        display: inline-block;
+    }
+    nav div#menu-menu{
+        display: none;
+        position:absolute;
+        background-color: aqua;
+        border: 1px solid white;
+    }
+
+    nav div#menu-menu a {
+        display: block;
+    }
+
+    
+    nav ul li#menu:hover div#menu_menu {
+    display: block;
+    }
+}
+
+@media(min-width:481), (max-width:768px){
+
+}
+
+@media(min-width:769){
+
+}
