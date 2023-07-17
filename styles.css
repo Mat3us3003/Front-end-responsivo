@@ -1,3 +1,5 @@
+
+ 
 body{
     margin: 0;
     padding: 0;
@@ -9,53 +11,107 @@ body{
 ul li{
     list-style: none;
 }
+
 @media(max-width:480px){
+    .navigation{
+        width: inherit;
+    }
     .logo{
         background-color: yellow;
         border-radius: 10px;
     }
-    .titulo-logo{
-        text-align: center;
+
+    .imagem-logo{
+        justify-content: center;
+        width: 50px;
+        height: 50px;
     }
 
-    
-    nav ul li a{
+    .titulo-logo{
+        text-align: center;
+        margin: 0;
+    }
+
+    .menu-box {
+        display: none;
+    }
+
+    nav .menu {
         display: inline-block;
         padding: 0.5em;
         text-decoration: none;
         cursor: pointer;
+        width: 100%;
+        background-color: rgb(227, 186, 108);
     }
 
-    nav ul li a:hover {
-        background-color: #cccccc;
-        color: #383838;
+    nav .menu:hover {
+        background-color: rgb(227, 186, 108);
+        color: #000000;
     }
 
-
-    nav ul li{
-        display: inline-block;
-    }
-    nav div#menu-menu{
-        display: none;
-        position:absolute;
-        background-color: aqua;
-        border: 1px solid white;
-    }
-
-    nav div#menu-menu a {
+    #menu-box:checked ~ #menu-menu {
         display: block;
     }
 
-    
-    nav ul li#menu:hover div#menu_menu {
-    display: block;
+    #menu-menu {
+        display: none;
+        background-color: rgb(227, 186, 108);
+        color: #000000;
     }
+
+    #menu-menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu-menu li {
+        display: block;
+    }
+
+    #menu-menu a {
+        display: block;
+        padding: 0.5em;
+        text-decoration: none;
+    }
+
+    .input{
+        padding: 0.5em;
+        margin-top:2%;
+        margin-bottom: 2%;
+        width: 100%;
+        background-color: rgb(218, 151, 151);
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    .links{
+        width: 100%;
+        background-color: aquamarine;
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    .text{
+        text-align: justify;
+        background-color: gray;
+        border-radius: 10px;
+    }
+
+    footer{
+        background-color: #000000;
+        color: azure;
+    }
+    a{
+        color: azure;
+    }
+
 }
 
-@media(min-width:481), (max-width:768px){
+@media(min-width:481px), (max-width:768px){
 
 }
 
-@media(min-width:769){
+@media(min-width:769px){
 
-}
+} 

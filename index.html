@@ -9,37 +9,45 @@
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="" class="imagem-logo">
+            <img src="./assets/star.png" alt="estrela" class="imagem-logo">
             <h2 class="titulo-logo">Meus Links</h2>
         </div>
-        <div class="">
+        <div class="navigation">
             <nav>
-                <ul class="lista-nav">
-                    <li><a href="" class="menu">Menu<span>&#9660;</span></a>
-                        <div id="menu-menu">
-                            <a href="">Inicio</a>
-                            <a href="">Contato</a>
-                            <a href="">Ajuda</a>
-                        </div>
-                    </li>
-                </ul>
+                <input type="checkbox" id="menu-box" class="menu-box">
+                <label for="menu-box" class="menu">Menu<span>&#9660;</span></label>
+                <div id="menu-menu">
+                    <ul class="navigation-buttons">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
     <main>
-        <input type="text" placeholder="Digite o nome e o endereço separado por vírgula">
-        <div>
+        <input type="text" placeholder="Digite o nome e o endereço separado por vírgula" class="input">
+        <div class="links">
             <ul>
                 <li>Nunca mais esqueça um link</li>
             </ul>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima quia dolorem ad voluptas molestias ut maxime laborum cum. Tempora autem ipsum itaque sapiente non magni libero harum consequuntur odit!</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima quia dolorem ad voluptas molestias ut maxime laborum cum. Tempora autem ipsum itaque sapiente non magni libero harum consequuntur odit!</p>
     </main>
 
     <footer>
         <h3>Contato</h3>
+        <ul class="contato">
+            <li>Instagram</li>
+            <li><a href="">@Mateus301</a></li>
+            <li><a href="">@Alexandre</a></li>
+            <li>GitHub</li>
+            <li><a href="">Mat3us3003</a></li>
+            <li><a href="">Ale-lira</a></li>
+        </ul>
         <h3>Sobre</h3>
+        <span class="sobre">Dois programadores juniors procurando trabalho</span>
     </footer>
-    
 </body>
 </html>
